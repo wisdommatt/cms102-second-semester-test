@@ -14,9 +14,9 @@
 # ---------------------------------------------------------------------
 
 
-# ======================================================================
-#                       PSEUDO CODE
-# ======================================================================
+# =========================================================================================================
+#                                     PSEUDO CODE
+# =========================================================================================================
 # 
 #   STEP 1: Ask the user to input a number.
 #   STEP 2: Assign the user input to a variable 'num'.
@@ -30,15 +30,24 @@
 #           the loop and print that the number is a prime number.
 #   STEP 9: If the loop ends and num modulus any iteration value is not equal to zero (0)
 #           print that the number is not a prime number.
+# 
+# =========================================================================================================
+#                                   END OF PSEUDO CODE
+# =========================================================================================================
 
-def prime_calculator():
-    number = 50
+# prime_number_checker is the main function in the application.
+# after it gets executed it carries out the functionalities described
+# in the pseudo code above.
+def prime_number_checker():
+    # asking for integer input from the user and assigning the 
+    # value to a variable.
+    num = input("Please provide a number: ")
     is_prime = True
-    for i in range(2, number):
+    for i in range(2, int(num)):
         if number % i == 0:
             print (i)
             is_prime = False
 
-    print(is_prime)
+    print(str(is_prime))
 
-prime_calculator()
+prime_number_checker()
