@@ -72,4 +72,6 @@ def prime_number_checker():
     # this part of the function only gets executed if the number is a prime number.
     print (str(num) + " is a prime number !")
 
+# executing the prime_number_checker function that carries out the 
+# application functionalities.
 prime_number_checker()
