@@ -57,7 +57,10 @@ def prime_number_checker():
         return
     # interating from 2 to the number - 1.
     # if we incude the number itself we will get a wrong result
-    # i.e 50 % 50 == 0
+    # i.e 17 % 17 is 0
+    # 
+    # the reason we started from 2 is because if we added 1 to the interation
+    # we would get a wrong result because 17 % 1 is 0 
     for i in range(2, int(num)):
         if int(num) % i == 0:
             print (i)
