@@ -57,14 +57,19 @@ def prime_number_checker():
         return
     # interating from 2 to the number - 1.
     # if we incude the number itself we will get a wrong result
-    # i.e 17 % 17 is 0
+    # i.e 17 % 17 is 0.
     # 
     # the reason we started from 2 is because if we added 1 to the interation
-    # we would get a wrong result because 17 % 1 is 0 
-    for i in range(2, int(num)):
-        if int(num) % i == 0:
-            print (i)
-            is_prime = False
-
+    # we would get a wrong result because 17 % 1 is 0.
+    for i in range(2, num):
+        # checking if number modulus (%) current iteration value is equal to 0.
+        if num % i == 0:
+            # printing out a message that the number is not a prime number.
+            # after printing the message we will break out of the loop and function.
+            print (str(num) + " is not a prime number !")
+            return
+    # printing out a message that the number is a prime number.
+    # this part of the function only gets executed if the number is a prime number.
+    print (str(num) + " is a prime number !")
 
 prime_number_checker()
