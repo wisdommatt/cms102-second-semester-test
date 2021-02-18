@@ -17,3 +17,16 @@
 # ======================================================================
 #                       PSEUDO CODE
 # ======================================================================
+
+def prime_calculator():
+    number = 50
+    is_prime = True
+    for i in range(2, number):
+        # print(i)
+        if number % i == 0:
+            print (i)
+            is_prime = False
+
+    print(is_prime)
+
+prime_calculator()
