@@ -42,9 +42,12 @@ def prime_number_checker():
     # asking for integer input from the user and assigning the 
     # value to a variable.
     num = input("Please provide a number: ")
+    # checking if the number is a digit or integer.
+    while num.isdigit() == False:
+        num = input("Number must be an integer, please try again: ")
     is_prime = True
     for i in range(2, int(num)):
-        if number % i == 0:
+        if int(num) % i == 0:
             print (i)
             is_prime = False
 
