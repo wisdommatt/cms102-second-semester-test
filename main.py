@@ -55,8 +55,9 @@ def prime_number_checker():
         # number greater than or equal to 50.
         prime_number_checker()
         return
-
-    is_prime = True
+    # interating from 2 to the number - 1.
+    # if we incude the number itself we will get a wrong result
+    # i.e 50 % 50 == 0
     for i in range(2, int(num)):
         if int(num) % i == 0:
             print (i)
